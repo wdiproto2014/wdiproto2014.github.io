@@ -9,6 +9,15 @@
   <script type="text/javascript" src="javascripts/libraries/underscore.js"></script>
   <script type="text/javascript" src="javascripts/libraries/backbone.js"></script>
 
+  <!-- TEMPLATES -->
+  <script type="text/template" id="student-template">
+    <%- name %> <%- bio %> <%- headshot %> <%- website %>
+  </script>
+
+  <script type="text/template" id="project-template">
+    <%- name %> <%- description %> <%- website %> <%- source %>
+  </script>
+
   <!-- MODELS -->
   <script type="text/javascript" src="javascripts/backbone/models/Student.js"></script>
   <script type="text/javascript" src="javascripts/backbone/models/Project.js"></script>
@@ -22,6 +31,9 @@
   <script type="text/javascript" src="javascripts/backbone/views/StudentListView.js"></script>
   <script type="text/javascript" src="javascripts/backbone/views/ProjectView.js"></script>
   <script type="text/javascript" src="javascripts/backbone/views/ProjectListView.js"></script>
+
+  <!-- APP -->
+  <script type="text/javascript" src="javascripts/app.js"></script>
 
 </head>
 <body>
