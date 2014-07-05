@@ -18,20 +18,19 @@ var protoNames = [
 'Kristen Tonga',
 'Wake Lankard',
 'Carlos Pichardo' ,
-'Paul Gasberra',
+'Paul Gasbarra',
 'Andrea Trapp'
 ];
 
 //Create the student collection
 var studentCollection = new StudentCollection();
 
-addNames = function(){
+function addNames (){
   _.each(protoNames, function(name){
     var studentModel = new Student({name: name});
     studentCollection.add(studentModel);
-    console.log(name + 'was added to studentCollection');
+    console.log(name + ' was added to studentCollection');
   })
-  return studentCollection;
 }
 
 $(function(){
