@@ -1,0 +1,79 @@
+body {
+  font-family: 'Muli';
+  font-size: 16px;
+}
+
+a {
+  color: #D6521E; /* blood orange */
+}
+/*yellow #fbd334*/
+.container-fluid {
+  padding: 0;
+}
+
+/* NAV */
+nav {
+  position: fixed;
+  overflow: auto;
+  background-color: #f5f5f5;
+  font-family: 'Questrial';
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+
+nav span {
+  margin: 1em 2em 0.8em 0;
+  display: inline-block;
+  font-family: 'Questrial';
+}
+
+nav ul {
+  margin: 1em 2em 0.8em 0;
+  list-style-type: none;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a:hover {
+  color: #555;
+  text-decoration: none;
+}
+
+/* ABOUT */
+.about {
+  margin: 1.5em 0 0 0;
+}
+
+.class-desc h1 {
+  font-family: 'Muli';
+  font-size: 3em;
+  margin-bottom: .5em;
+}
+
+.class-desc p {
+  font-size: 1.2em;
+}
+
+.class-desc img {
+  width: 600px;
+  height: 400px;
+  display: block;
+  margin: 1em auto;
+}
+
+.skills {
+  margin: .5em 0 2em 0;
+}
+
+.skills h2 {
+  text-align: center;
+  font-family: 'Questrial';
+  background-color: #fbd334;
+  padding: 5px;
+}
+
+.skills p {
+  font-size: 1.1em;
+}

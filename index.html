@@ -1,8 +1,15 @@
-<html>
+<!DOCTYPE html>
+<html lang='en'>
 <head>
   <title>WDI Proto 2014!</title>
-  <!-- STYLES 'N SUCH' -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- STYLES 'N SUCH' -->
+  <link href='http://fonts.googleapis.com/css?family=Questrial|Arimo|Muli|Special+Elite' rel='stylesheet' type='text/css'>
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap/bootstrap-theme.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <!-- LIBRARIES -->
   <script type="text/javascript" src="javascripts/libraries/jquery.js"></script>
@@ -13,6 +20,7 @@
   <script type="text/template" id="student-template">
     <img src='<%- headshot %>' class='headshot'/>
     <%- name %> <%- bio %>  <%- website %>
+    <%- github %>
   </script>
 
   <script type="text/template" id="project-template">
@@ -38,6 +46,66 @@
 
 </head>
 <body>
+
+<div class="container-fluid">
+  <nav class='col-md-12'>
+    <span>General Assembly / April 2014</span>
+
+    <ul class='pull-right'>
+      <li>
+        <a href="" id='about'>About WDI</a> &nbsp;+&nbsp;
+      </li>
+      <li>
+        <a href="" id='people'>Who we are</a> &nbsp;+&nbsp;
+      </li>
+      <li>
+        <a href="" id='projects'>Projects</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="about col-md-12">
+    <div class="row">
+      <div class="class-desc col-md-8 col-md-offset-2">
+        <h1>We are WDI.__proto__</h1>
+
+        <p>From 21 wide-eyed programming newbies, we've been transformed into junior full-stack web developers over the course of General Assembly's 12-week Web Development Immersive. Now we are ready to be unleashed into the world to build meaningful things.</p>
+
+        <img src="images/.jpg" alt="Class photo">
+      </div>
+    </div>
+
+    <div class="row skills">
+      <div class="col-md-3">
+        <h2><i class="fa fa-code"></i> Front-end</h2>
+        <p>We are fluent in HTML5, CSS3, Javascript, AJAX as well as extensions and libraries like SASS, Skeleton, Bootstrap, jQuery, Underscore.js, Backbone.js. </p>
+      </div>
+
+      <div class="col-md-3">
+        <h2><i class="fa fa-cog"></i> Back-end</h2>
+        <p>We specialize in Ruby on Rails applications with a PostgreSQL database but have also dabbled in Sinatra, Node.js and MongoDB.</p>
+      </div>
+
+      <div class="col-md-3">
+        <h2><i class="fa fa-code-fork"></i> Dev tools</h2>
+        <p>WDI graduates are well-versed in Git and Bash. Our applications are tested with RSpec, Jasmine and deployed to Heroku, among other cloud-based hosting.</p>
+      </div>
+
+      <div class="col-md-3">
+        <h2><i class="fa fa-check"></i>And more</h2>
+        <p>We are equipped with pair-programming and Object Oriented Programming best practices, as well as the ability to identify and tackle problems.</p>
+      </div>
+    </div>
+
+  </div> <!-- about -->
+
+  <footer class='col-md-12'>
+
+  </footer>
+
+
+</div> <!-- flui container -->
+
 
 </body>
 </html>
