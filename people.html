@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <title>WDI Proto 2014!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- STYLES 'N SUCH' -->
+  <link href='http://fonts.googleapis.com/css?family=Questrial|Arimo|Muli|Special+Elite' rel='stylesheet' type='text/css'>
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap/bootstrap-theme.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- LIBRARIES -->
+  <script type="text/javascript" src="javascripts/libraries/jquery.js"></script>
+  <script type="text/javascript" src="javascripts/libraries/underscore.js"></script>
+  <script type="text/javascript" src="javascripts/libraries/backbone.js"></script>
+
+  <!-- TEMPLATES -->
+  <script type="text/template" id="student-template">
+    <img src='<%- headshot %>' class='headshot'/>
+    <%- name %> <%- bio %>  <%- website %>
+    <%- github %>
+  </script>
+
+  <script type="text/template" id="project-template">
+    <%- name %> <%- description %> <%- website %> <%- source %>
+  </script>
+
+  <!-- MODELS -->
+  <script type="text/javascript" src="javascripts/backbone/models/Student.js"></script>
+  <script type="text/javascript" src="javascripts/backbone/models/Project.js"></script>
+
+  <!-- COLLECTIONS -->
+  <script type="text/javascript" src="javascripts/backbone/collections/StudentCollection.js"></script>
+  <script type="text/javascript" src="javascripts/backbone/collections/ProjectCollection.js"></script>
+
+  <!-- VIEWS -->
+  <script type="text/javascript" src="javascripts/backbone/views/StudentView.js"></script>
+  <script type="text/javascript" src="javascripts/backbone/views/StudentListView.js"></script>
+  <script type="text/javascript" src="javascripts/backbone/views/ProjectView.js"></script>
+  <script type="text/javascript" src="javascripts/backbone/views/ProjectListView.js"></script>
+
+  <!-- APP -->
+  <script type="text/javascript" src="javascripts/app.js"></script>
+
+</head>
+
+
+<body>
+  <div class='people'>
+    <div class="col-md-8 col-md-offset-2">
+      <div class="row">
+      <h2>The students</h2>
+
+      <ul class='thumbnails'>
+        <!-- Images are rendered with backbone (adding image url) with the model id in data. On click we can fetch the corresponding description & links that were rendered in the hidden div -->
+        <!-- Img on hover: display name overlay -->
+        <li><img src="images/wake.jpg" alt="Thumbnail headshot" data='model-id'></li>
+        <li><img src="https://avatars3.githubusercontent.com/u/7177481?s=460" alt="Thumbnail headshot"></li>
+        <li><img src="https://avatars3.githubusercontent.com/u/5302342?s=460" alt="Thumbnail headshot"></li>
+        <li><img src="https://avatars0.githubusercontent.com/u/7062578?s=460" alt="Thumbnail headshot"></li>
+        <li><img src="https://avatars3.githubusercontent.com/u/7244773?s=400" alt="Thumbnail headshot"></li>
+      </ul>
+
+      <div class="student-desc">
+        <!-- This content is only placeholder for styling purposes. Should be rendered by backbone and shown at random on page load -->
+        <img src="https://avatars3.githubusercontent.com/u/7177481?s=460" alt='Full-size headshot'/>
+
+        <h3>Nessa Nguyen</h3>
+
+        <p>Nessa came to NYC to pursue her love for passion but soon turned to digital marketing and web development. She enjoys making beautiful designs, solving problems and enhancing her skills as a full-stack developer.</p>
+        <p>
+          <a href="http://nessanguyen.com" target='_blank'>
+            <i class="fa fa-user"></i> &nbsp;nessanguyen.com
+          </a><br/>
+          <a href="https://github.com/myfashionhub" target='_blank'>
+            <i class="fa fa-github"></i> &nbsp;myfashionhub
+          </a>
+        </p>
+      </div>
+      </div> <!-- students row-->
+
+      <h2>The intructors</h2>
+      <ul class='instructors'>
+        <li>
+          <img src="images/aldric.jpeg" alt="Aldric" target='_blank'>
+          <h3>Aldric Giacomoni</h3>
+          <p>
+            Aldric is a lover of Ruby, martial arts and a passionate advocate of Agile development methods, including pair programming and TDD. He has a keen eye for finding patterns and dissecting problems.
+            Find him on Twitter <a href="https://twitter.com/trevoke">@trevoke</a>
+          </p>
+        </li>
+
+        <li>
+          <img src="images/matt.jpg" alt="Matt">
+          <h3>Matt Marcello</h3>
+          <p>
+            Matt is a Harvard graduate with an electic background of neurobiology, IT consulting, greenhouse management, web development and shoe company founding. Currently, he preaches minimal hipsterism and co-instructs GA WDI.
+            Find him at <a href="http://mattmarcello.com/"target='_blank'>mattmarcello.com</a>
+          </p>
+        </li>
+
+        <li>
+          <img src="images/andrew.jpg" alt="Andrew">
+          <h3>Andrew Madden</h3>
+          <p>
+            Andrew initially came to WDI as a student with expertise in music, audio recording and audio signal processing. He brings valuable pedagogical techniques and a great sense of humor to his teaching posts at WDI and NYU Digital Signal Theory Lab.
+            Find him at <a href="http://www.andrewmadden.com/" target='_blank'>andrewmadden.com</a>
+          </p>
+        </li>
+      </ul>
+    <!-- Render all students' info in this hidden div and show on click of the thumbnail pic -->
+    <div class="hidden">
+
+    </div>
+
+    </div> <!-- 8 col offset 2 -->
+  </div> <!-- people -->
+
+</body>
+</html>

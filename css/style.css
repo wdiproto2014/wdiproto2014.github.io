@@ -5,15 +5,22 @@ body {
 
 a {
   color: #D6521E; /* blood orange */
+} /*yellow #fbd334*/
+
+a:hover {
+  color: #555;
+  text-decoration: none;
 }
-/*yellow #fbd334*/
+
 .container-fluid {
   padding: 0;
 }
 
 /* NAV */
 nav {
-  position: fixed;
+  position: fixed !important;
+  top: 0;
+  z-index: 1;
   overflow: auto;
   background-color: #f5f5f5;
   font-family: 'Questrial';
@@ -36,18 +43,13 @@ nav li {
   display: inline;
 }
 
-nav a:hover {
-  color: #555;
-  text-decoration: none;
+/* Main content div */
+main {
+  margin: 4.5em 0 0 0;
 }
 
-/* ABOUT */
-.about {
-  margin: 1.5em 0 0 0;
-}
-
+/* ABOUT PAGE */
 .class-desc h1 {
-  font-family: 'Muli';
   font-size: 3em;
   margin-bottom: .5em;
 }
@@ -76,4 +78,83 @@ nav a:hover {
 
 .skills p {
   font-size: 1.1em;
+}
+
+/* FOOTER */
+footer {
+  background-color: #f5f5f5;
+  font-family: 'Questrial';
+}
+
+
+/* PEOPLE PAGE */
+.hidden {
+  display: none;
+}
+
+.people h2 {
+  margin: 1em 0 .7em 0;
+  padding: 5px 0;
+  border-bottom: 2px solid #fbd334;
+  font-family: 'Questrial';
+
+}
+
+ul.thumbnails {
+  list-style-type: none !important;
+  padding: 0 5%;
+  height: 15em;
+}
+
+.thumbnails li {
+  display: inline-block;
+  margin: 0 2% .5em 0;
+}
+
+.thumbnails img {
+  width: 80px;
+}
+
+.student-desc {
+  padding: 0 5%;
+}
+
+.student-desc img {
+  width: 10em;
+  height: 10em;
+  float: left;
+  margin: 0 1.5em 3em 0;
+}
+
+.student-desc h3 {
+  font-family: 'Questrial';
+  color: #D6521E;
+  text-transform: uppercase;
+}
+
+.student-desc p {
+  font-size: 1.1em;
+  font-family: 'Arimo';
+}
+
+.instructors {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 1em 0;
+}
+
+.instructors li {
+  display: inline-block;
+  width: 30%;
+  margin: 0 0 0 2%;
+  vertical-align: top;
+}
+
+.instructors img {
+  max-height: 140px;
+  display: block;
+  margin: 0 auto;
+}
+.instructors p {
+  font-family: 'Muli'
 }
