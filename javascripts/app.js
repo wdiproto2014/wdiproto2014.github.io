@@ -22,6 +22,18 @@ var protoNames = [
 'Andrea Trapp'
 ];
 
+var protoObjects = [
+  {
+   name: 'Nessa Nguyen',
+   intro: 'Nessa came to NYC to pursue her love for passion but soon turned to digital marketing and web development. She enjoys making beautiful designs, solving problems and enhancing her skills as a full-stack developer.',
+   portfolio: 'http://nessanguyen.com',
+   github: 'https://github.com/myfashionhub',
+   twitter: 'http://www.twitter.com/_Myfashionhub',
+   email: 'v.nessa.nguyen@gmail.com',
+   image: '../images/protos/Nessa.jpg'
+  },
+]
+
 //Create the student collection
 var studentCollection = new StudentCollection();
 
