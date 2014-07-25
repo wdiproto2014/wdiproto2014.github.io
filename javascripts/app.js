@@ -1,5 +1,5 @@
 var protoNames = [
-// 'Nessa Nguyen',
+'Nessa Nguyen',
 'Jeff Winkler',
 'John Murphy',
 'Jeff Drakos',
@@ -9,12 +9,12 @@ var protoNames = [
 'Nathaniel Tuvera',
 'Tim Hannes',
 'Aziz Hasanov',
-// 'Chris Heuberger',
+'Chris Heuberger',
 'Dmitry Shamis' ,
-// 'Corey Leveen',
+'Corey Leveen',
 'Paul Hiam',
 'Steven Doran',
-// 'Ben Karl',
+'Ben Karl',
 'Kristen Tonga',
 'Wake Lankard',
 'Carlos Pichardo' ,
@@ -176,10 +176,10 @@ var protoObjects = [
 var studentCollection = new StudentCollection();
 
 function addNames (){
-  _.each(protoNames, function(name){
-    var studentModel = new Student({name: name});
+  _.each(protoObjects, function(model){
+    var studentModel = new Student(model);
     studentCollection.add(studentModel);
-    console.log(name + ' was added to studentCollection');
+    console.log(model.name + ' was added to studentCollection');
   })
 }
 
