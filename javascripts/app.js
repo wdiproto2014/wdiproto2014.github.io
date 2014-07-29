@@ -154,6 +154,11 @@ var studentCollection;
 var studentListView;
 
 function initialize(){
+
+  protoObjects = protoObjects.sort(function(a, b){
+    return a.name.localeCompare(b.name);
+  })
+
   studentCollection = new StudentCollection();
 
   _.each(protoObjects, function(model){
