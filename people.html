@@ -23,23 +23,19 @@
     <%- github %>
   </script>
 
-  <script type="text/template" id="class-template">
-    <img src='<%- headshot %>' class='class-headshot'/>
+  <script type="text/template" id="headshot-template">
+    <img src='<%- image %>' class='class-headshot'/>
   </script>
 
   <!-- MODELS -->
   <script type="text/javascript" src="javascripts/backbone/models/Student.js"></script>
-  <script type="text/javascript" src="javascripts/backbone/models/Project.js"></script>
 
   <!-- COLLECTIONS -->
   <script type="text/javascript" src="javascripts/backbone/collections/StudentCollection.js"></script>
-  <script type="text/javascript" src="javascripts/backbone/collections/ProjectCollection.js"></script>
 
   <!-- VIEWS -->
   <script type="text/javascript" src="javascripts/backbone/views/StudentView.js"></script>
   <script type="text/javascript" src="javascripts/backbone/views/StudentListView.js"></script>
-  <script type="text/javascript" src="javascripts/backbone/views/ProjectView.js"></script>
-  <script type="text/javascript" src="javascripts/backbone/views/ProjectListView.js"></script>
 
   <!-- APP -->
   <script type="text/javascript" src="javascripts/app.js"></script>
@@ -56,11 +52,7 @@
       <ul class='thumbnails'>
         <!-- Images are rendered with backbone (adding image url) with the model id in data. On click we can fetch the corresponding description & links that were rendered in the hidden div -->
         <!-- Img on hover: display name overlay -->
-        <li><img src="images/wake.jpg" alt="Thumbnail headshot" data='model-id'></li>
-        <li><img src="https://avatars3.githubusercontent.com/u/7177481?s=460" alt="Thumbnail headshot"></li>
-        <li><img src="https://avatars3.githubusercontent.com/u/5302342?s=460" alt="Thumbnail headshot"></li>
-        <li><img src="https://avatars0.githubusercontent.com/u/7062578?s=460" alt="Thumbnail headshot"></li>
-        <li><img src="https://avatars3.githubusercontent.com/u/7244773?s=400" alt="Thumbnail headshot"></li>
+
       </ul>
 
       <div class="student-desc">
