@@ -1,4 +1,5 @@
 var StudentListView = Backbone.View.extend({
+  template: _.template($('#class-template').html()),
   initialize: function(){
     this.listenTo(this.collection, 'change', this.render);
   },

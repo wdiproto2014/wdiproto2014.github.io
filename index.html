@@ -23,23 +23,19 @@
     <%- github %>
   </script>
 
-  <script type="text/template" id="project-template">
-    <%- name %> <%- description %> <%- website %> <%- source %>
+  <script type="text/template" id="class-template">
+    <img src='<%- headshot %>' class='class-headshot'/>
   </script>
 
   <!-- MODELS -->
   <script type="text/javascript" src="javascripts/backbone/models/Student.js"></script>
-  <script type="text/javascript" src="javascripts/backbone/models/Project.js"></script>
 
   <!-- COLLECTIONS -->
   <script type="text/javascript" src="javascripts/backbone/collections/StudentCollection.js"></script>
-  <script type="text/javascript" src="javascripts/backbone/collections/ProjectCollection.js"></script>
 
   <!-- VIEWS -->
   <script type="text/javascript" src="javascripts/backbone/views/StudentView.js"></script>
   <script type="text/javascript" src="javascripts/backbone/views/StudentListView.js"></script>
-  <script type="text/javascript" src="javascripts/backbone/views/ProjectView.js"></script>
-  <script type="text/javascript" src="javascripts/backbone/views/ProjectListView.js"></script>
 
   <!-- APP -->
   <script type="text/javascript" src="javascripts/app.js"></script>
@@ -53,13 +49,10 @@
 
     <ul class='pull-right'>
       <li>
-        <a href="" id='about'>About WDI</a> &nbsp;+&nbsp;
+        <a href="people.html" id='people'>Who we are</a> &nbsp;+&nbsp;
       </li>
       <li>
-        <a href="" id='people'>Who we are</a> &nbsp;+&nbsp;
-      </li>
-      <li>
-        <a href="" id='projects'>Projects</a>
+        <a href="project.html" id='projects'>Projects</a>
       </li>
     </ul>
   </nav>
@@ -73,7 +66,7 @@
 
         <p>From 21 wide-eyed programming newbies, we've been transformed into junior full-stack web developers over the course of General Assembly's 12-week Web Development Immersive. Now we are ready to be unleashed into the world to build meaningful things.</p>
 
-        <img src="images/.jpg" alt="Class photo">
+        <img src="images/class.jpg" alt="Class photo">
       </div>
     </div>
 
