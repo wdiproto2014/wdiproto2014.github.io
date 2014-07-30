@@ -170,5 +170,10 @@ function initialize(){
 }
 
 $(function(){
+  // $('#people').click(function(e) {
+  //   e.preventDefault();
+  //   $('body').load('people.html')
+  // });
+
   initialize();
 })
