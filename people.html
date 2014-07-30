@@ -17,10 +17,14 @@
   <script type="text/javascript" src="javascripts/libraries/backbone.js"></script>
 
   <!-- TEMPLATES -->
-  <script type="text/template" id="student-template">
-    <img src='<%- headshot %>' class='headshot'/>
-    <%- name %> <%- bio %>  <%- website %>
-    <%- github %>
+  <script type='text/template' id='student-profile-template'>
+    <img src='<%- image %>' alt='Full-size headshot'/>
+    <h3><%- name %></h3>
+    <p><%- intro %></p>
+    <p>
+    <a href='<%- portfolio %>' target='_blank'><i class="fa fa-user"></i> Portfolio</a></br>
+    <a href='<%- github %>' target='_blank'><i class="fa fa-github"></i> Github</a>
+    </p>
   </script>
 
   <script type="text/template" id="headshot-template">
@@ -74,7 +78,7 @@
           <img src="images/instructors/matt.jpg" alt="Matt">
           <h3>Matt Marcello</h3>
           <p>
-            Matt is a Harvard graduate with an electic background of neurobiology, IT consulting, greenhouse management, web development and shoe company founding. Currently, he preaches minimal hipsterism and co-instructs GA WDI.
+            Matt attended Harvard University, where he studied Neurobiology, and also played soccer. After receiving his degree in Neurobiology, Matt worked as a technical analyst at an IT Consulting firm. In August 2013, Matt entered the Web-Development Immersive (WDI) program at GA as a student. Now, he is a co-instructor in that same program.
             Find him at <a href="http://mattmarcello.com/"target='_blank'>mattmarcello.com</a>
           </p>
         </li>
@@ -83,7 +87,7 @@
           <img src="images/instructors/andrew.jpg" alt="Andrew">
           <h3>Andrew Madden</h3>
           <p>
-            Andrew initially came to WDI as a student with expertise in music, audio recording and audio signal processing. He brings valuable pedagogical techniques and a great sense of humor to his teaching posts at WDI and NYU Digital Signal Theory Lab.
+            Musician, Audio Recording Engineer, Audio Signal Processing Developer, Web-Developer. Originally from Jersey, Andrew came to the City seeking tech. In May 2013, Andrew entered the Web-Development Immersive (WDI) program at GA as a student. Shortly after, he rejoined GA as a Developer in Residence in the WDI program.
             Find him at <a href="http://www.andrewmadden.com/" target='_blank'>andrewmadden.com</a>
           </p>
         </li>
