@@ -10,9 +10,9 @@ var StudentView = Backbone.View.extend({
     return this;
   },
   events: {
-    'click' : 'renderStudentDescription'
+    'click' : 'renderStudentDesc'
   },
-  renderStudentDescription: function() {
+  renderStudentDesc: function() {
     var container = $('.student-desc');
     container.html('');
     container.html(this.descriptionTemplate(this.model.attributes));

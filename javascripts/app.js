@@ -160,13 +160,15 @@ function initializeApp(){
   })
 
   studentCollection = new StudentCollection();
-
   _.each(protoObjects, function(model){
     var studentModel = new Student(model);
     studentCollection.add(studentModel);
   })
-
   studentListView = new StudentListView({collection: studentCollection, el: $('.thumbnails')});
+
+  var randomStudent = _.sample(studentCollection.models);
+  var randomStudentView = new StudentView({model: randomStudent});
+  randomStudentView.renderStudentDesc();
 }
 
 $(function(){

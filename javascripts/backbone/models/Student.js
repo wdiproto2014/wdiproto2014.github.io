@@ -1,8 +1,8 @@
 var Student = Backbone.Model.extend({
   defaults:{
     name: "",
-    bio: "",
-    headshot: "",
-    website: ""
+    intro: "",
+    image: "",
+    portfolio: ""
   }
-})
+});
