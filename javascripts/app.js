@@ -36,7 +36,7 @@ var protoObjects = [
    image: 'images/protos/cropped/Dmitry.jpg'},
   {name: 'Paul Hiam',
    intro: 'Paul has a background in digital media and has worked primarily with non-profits and social ventures. He recently moved to New York to attend ITP at Tisch. When Paul is not dreaming up web applications, he enjoys rock climbing and making music.',
-   portfolio: 'http://www.paulhiam.com',
+   portfolio: 'http://paulhiam.github.io',
    github: 'https://github.com/paulh1am',
    twitter: '',
    email: 'p.s.hiam@gmail.com',
@@ -144,7 +144,7 @@ var protoObjects = [
    portfolio: 'http://jonathangean.github.io/',
    github: 'https://github.com/jonathangean',
    twitter: '',
-   email: 'johnathangean@gmail.com',
+   email: 'jonathangean@gmail.com',
    image: 'images/protos/cropped/Jonathan.jpg'},
 ]
 
