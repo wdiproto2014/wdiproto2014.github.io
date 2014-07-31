@@ -18,12 +18,16 @@
 
   <!-- TEMPLATES -->
   <script type='text/template' id='student-profile-template'>
-    <img src='<%- headshot %>' alt='Full-size headshot'/>
+    <img src='<%- image %>' alt='headshot'/>
     <h3><%- name %></h3>
-    <p><%- bio %></p>
+    <p><%- intro %></p>
     <p>
-    <a href='<%- portfolio %>' target='_blank'><i class="fa fa-user"></i> Portfolio</a></br>
-    <a href='<%- github %>' target='_blank'><i class="fa fa-github"></i>Github</a>
+    <a href='<%- portfolio %>' target='_blank'>
+      <i class="fa fa-user"></i> Portfolio
+    </a></br>
+    <a href='<%- github %>' target='_blank'>
+      <i class="fa fa-github"></i> Github
+    </a>
     </p>
   </script>
 
@@ -43,6 +47,7 @@
 
   <!-- APP -->
   <script type="text/javascript" src="javascripts/app.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
 
 </head>
 <body>
@@ -53,51 +58,19 @@
 
     <ul class='pull-right'>
       <li>
+        <a href="#" id='about' class='current'>About us</a>
+      </li>
+
+      <li>
         <a href="#" id='people'>Meet the class</a>
       </li>
     </ul>
   </nav>
 
   <main class="col-md-12">
-  <!-- On clicking "Who we are" in the menu, ajax will load people.html and append it in this space. Nessa will be in charge of this -->
-  <div class="about">
-    <div class="row">
-      <div class="class-desc col-md-8 col-md-offset-2">
-        <h1>We are WDI.__proto__</h1>
-
-        <p>From 21 wide-eyed programming newbies, we've been transformed into junior full-stack web developers over the course of General Assembly's 12-week Web Development Immersive. Now we are ready to be unleashed into the world to build meaningful things.</p>
-
-        <img src="images/class.jpg" alt="Class photo">
-      </div>
-    </div>
-
-    <div class="row skills">
-      <div class="col-md-3">
-        <h2><i class="fa fa-code"></i> Front-end</h2>
-        <p>We are fluent in HTML5, CSS3, Javascript, AJAX as well as extensions and libraries like SASS, Skeleton, Bootstrap, jQuery, Underscore.js, Backbone.js. </p>
-      </div>
-
-      <div class="col-md-3">
-        <h2><i class="fa fa-cog"></i> Back-end</h2>
-        <p>We specialize in Ruby on Rails applications with a PostgreSQL database but have also dabbled in Sinatra, Node.js and MongoDB.</p>
-      </div>
-
-      <div class="col-md-3">
-        <h2><i class="fa fa-code-fork"></i> Dev tools</h2>
-        <p>WDI graduates are well-versed in Git and Bash. Our applications are tested with RSpec, Jasmine and deployed to Heroku, among other cloud-based hosting.</p>
-      </div>
-
-      <div class="col-md-3">
-        <h2><i class="fa fa-check"></i>And more</h2>
-        <p>We are equipped with pair-programming and Object Oriented Programming best practices, as well as the ability to identify and tackle problems.</p>
-      </div>
-    </div>
-
-  </div>
   </main> <!-- main container -->
 
   <footer class='col-md-12'>
-
   </footer>
 
 

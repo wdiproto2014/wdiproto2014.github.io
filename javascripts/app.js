@@ -153,7 +153,7 @@ var protoObjects = [
 var studentCollection;
 var studentListView;
 
-function initialize(){
+function initializeApp(){
 
   protoObjects = protoObjects.sort(function(a, b){
     return a.name.localeCompare(b.name);
@@ -170,10 +170,5 @@ function initialize(){
 }
 
 $(function(){
-  // $('#people').click(function(e) {
-  //   e.preventDefault();
-  //   $('body').load('people.html')
-  // });
-
-  initialize();
+  initializeApp();
 })

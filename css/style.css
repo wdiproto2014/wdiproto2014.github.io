@@ -41,7 +41,14 @@ nav ul {
 
 nav li {
   display: inline;
+  margin-right: 15px;
 }
+
+nav a.current {
+  color: #555;
+  border-bottom: 2px solid #D6521E;
+}
+
 
 /* Main content div */
 main {
@@ -109,6 +116,10 @@ ul.thumbnails {
 .thumbnails li {
   display: inline-block;
   margin: 0 2% .5em 0;
+}
+
+.thumbnails li:hover {
+  cursor: pointer;
 }
 
 .thumbnails img {
