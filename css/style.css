@@ -122,8 +122,10 @@ ul.thumbnails {
   margin: 0 2% .5em 0;
 }
 
-.thumbnails li:hover {
+.thumbnails li:hover,
+.current-student {
   cursor: pointer;
+  opacity: 0.5;
 }
 
 .thumbnails img {
