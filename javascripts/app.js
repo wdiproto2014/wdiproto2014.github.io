@@ -14,7 +14,7 @@ var protoObjects = [
    email: 'coreyleveen@gmail.com',
    image: 'images/protos/cropped/Corey.jpg'},
   {name: 'Ben Karl',
-   intro: 'A seven-year veteran of public relations, Ben was inspired to become a developer after working with PayPal\'s engineering team to develop application prototypes for a year-long series of media events. He is fun-loving and positively gregarious.',
+   intro: 'A seven-year veteran of public relations, Ben was inspired to pursue his passion for building technology while working with PayPal\'s engineering team to develop payment application prototypes for a series of media events.',
    portfolio: 'http://benrkarl.com',
    github: 'https://github.com/BenRKarl',
    twitter: 'http://www.twitter.com/BenKarl',

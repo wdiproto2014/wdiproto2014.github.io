@@ -56,6 +56,10 @@ main {
 }
 
 /* ABOUT PAGE */
+.class-photo {
+  box-shadow: 10px 10px 20px gray;
+}
+
 .class-desc h1 {
   font-size: 3em;
   margin-bottom: .5em;
